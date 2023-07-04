@@ -8,34 +8,19 @@ import friends from './FriendList/friends.json';
 import transactions from './TransactionHistory/transactions.json';
 
 export const App = () => {
-  const { username, avatar, tag, location, stats } = user;
   return (
-    <div
-      style={{
-        // height: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
-
+    <>
       <Profile
-        name={username}
-        avatar={avatar}
-        tag={tag}
-        location={location}
-        stats={stats}
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
       />
-
-      <Statistics data={data} />
-
+      <Statistics title="Upload stats" stats={data} />
+      <Statistics stats={data} />
       <FriendList friends={friends} />
-
-      <TransactionHistory transactions={transactions} />
-
-    </div>
+      <TransactionHistory items={transactions} />
+    </>
   );
 };
