@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import './TransactionHistory.css';
+import './TransactionHistory.module.css';
 
 export const TransactionHistory = ({ items }) => {
   return (

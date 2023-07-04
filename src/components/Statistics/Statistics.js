@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
-//import { getRandomColor } from './../utils/getRandomColor';
-import './Statistics.css';
+import './Statistics.module.css';
 import clsx from 'clsx';
 
 export const getRandomColor = () => {
