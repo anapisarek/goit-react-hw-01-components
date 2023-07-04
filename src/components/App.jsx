@@ -30,12 +30,11 @@ export const App = () => {
         stats={stats}
       />
 
-      <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} />
+      <Statistics data={data} />
 
       <FriendList friends={friends} />
 
-      <TransactionHistory items={transactions} />
+      <TransactionHistory transactions={transactions} />
 
     </div>
   );
